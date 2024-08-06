@@ -1,13 +1,69 @@
 #titulo {
     color: aqua;
     text-align: center;
+    margin-bottom: 20px;
 
 }
 
 .entradas-formulario {
-    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    
+}
+
+.entradas-formulario input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #0099ff, #00ccff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #00ccff, #0099ff);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background: linear-gradient(145deg, #0099ff, #00ccff);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(1px);
 }
 
 .rodape {
+    position: fixed;
+    bottom: 0;
+    right: 0;
     border: 1px solid;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 14px;
+    
+    
 }
