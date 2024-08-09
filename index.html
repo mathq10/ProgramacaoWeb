@@ -9,14 +9,23 @@
 <body>
     <h1 id="titulo">Formulário de informações pessoais</h1>
     <div class="entradas-formulario">
-    <input type="text" placeholder="Nome">
-    <input type="number" placeholder="Idade">
-    <input type="text" placeholder="CPF">
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="number" placeholder="Idade">
+        <input type="text" placeholder="CPF">
     </div>
-    <a href="./boa.html">
-        <button>OK</button>
-    </a>
+    <button onclick="enviarNome()">OK</button>
     
     <footer class="rodape">by matheuzinberulelous</footer>  
+    
+    <script>
+        function enviarNome() {
+            const nome = document.getElementById('nome').value;
+            if (nome) {
+                window.location.href = `boa.html?nome=${encodeURIComponent(nome)}`;
+            } else {
+                alert("Por favor, insira seu nome.");
+            }
+        }
+    </script>
 </body>
 </html>
