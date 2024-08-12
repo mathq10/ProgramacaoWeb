@@ -4,28 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leandrinhapatroa</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1 id="titulo">Formulário de informações pessoais</h1>
     <div class="entradas-formulario">
         <input type="text" id="nome" placeholder="Nome">
         <input type="number" placeholder="Idade">
-        <input type="text" placeholder="CPF">
+        <input type="number" placeholder="CPF">
     </div>
     <button onclick="enviarNome()">OK</button>
     
     <footer class="rodape">by matheuzinberulelous</footer>  
     
-    <script>
-        function enviarNome() {
-            const nome = document.getElementById('nome').value;
-            if (nome) {
-                window.location.href = `boa.html?nome=${encodeURIComponent(nome)}`;
-            } else {
-                alert("Por favor, insira seu nome.");
-            }
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
